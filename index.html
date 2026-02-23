@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/png" href="logo.png">
+  <title>portfolio.exe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="crt-screen">
+    <!-- Boot screen -->
+    <div class="boot-overlay" id="boot">
+      <div class="boot-line">KYLEOS v6.3.2 — Initializing...</div>
+      <div class="boot-line">Checking memory... 640K OK</div>
+      <div class="boot-line">Loading PORTFOLIO.EXE...</div>
+      <div class="boot-line">Mounting filesystem... OK</div>
+      <div class="boot-line">Starting services... OK</div>
+      <div class="boot-line">▌ WELCOME. SYSTEM READY. ▌</div>
+    </div>
+
+    <!-- Custom cursor -->
+    <div class="cursor" id="cursor"></div>
+
+    <div class="crt-wrap">
+
+      <!-- Navbar -->
+      <nav class="titlebar">
+        <div class="titlebar-logo">[ <span>KYLE632</span>_PORTFOLIO ]</div>
+        <nav class="titlebar-nav">
+          <a href="#about">ABOUT</a>
+          <a href="#projects">PROJECTS</a>
+          <a href="#skills">SKILLS</a>
+        </nav>
+      </nav>
+
+      <div class="container">
+
+        <!-- HERO / ABOUT -->
+        <section class="hero" id="about">
+          <div class="hero-window">
+            <div class="window-bar">
+              <div class="window-dot"></div>
+              <div class="window-dot"></div>
+              <div class="window-dot"></div>
+              <span class="window-title">about.txt — READ ONLY</span>
+            </div>
+            <div class="window-body">
+              <div class="hero-greeting">
+                HELLO FRIENDS<span class="blink">_</span>
+              </div>
+              <div class="hero-subtitle">// I'm Kyle, a developer who sometimes makes stuff that kinda works.</div>
+              <p class="hero-desc">
+                Welcome to my corner of the terminal. I'm great at thinking up massive ideas, and then becoming determined to make them a reality. Currently working with
+                <span class="highlight">Python</span>, <span class="highlight">Lua</span>, and
+                <span class="highlight">HTML</span>.
+                <br><br>
+                yabadabadoo
+              </p>
+              <div class="type-line">
+                <span>C:\users\you&gt;</span> cat interests.txt
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects">
+          <div class="section-header">
+            <span class="prompt">//</span>
+            <h2>PROJECTS</h2>
+          </div>
+
+          <div class="projects-grid">
+
+            <!-- Project Card 1 -->
+            <div class="project-card">
+              <div class="project-card-bar">
+                <span>project_01.exe</span>
+                <span>PYTHON</span>
+              </div>
+              <div class="project-card-body">
+                <div class="project-title">Point of Sale System</div>
+                <p class="project-desc">
+                  A Point of Sale System built with Python, Tkinter and SQLite3. Built for my A-Level Computer Science coursework, then became a mini proejct I decided to keep building on.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">PYTHON</span>
+                  <span class="tag">TKINTER</span>
+                </div>
+                  <button class="project-link" onclick="openModal('modal1')">[ VIEW LINKS → ]</button>
+              </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card">
+              <div class="project-card-bar">
+                <span>project_02.exe</span>
+                <span>ROBLOX</span>
+              </div>
+              <div class="project-card-body">
+                <div class="project-title">Plinko RNG Machines</div>
+                <p class="project-desc">
+                  A Roblox game featuring realtime physics and RNG, styled in a Plinko machine. This was just a fun project to improve my knowledge of both Lua, but also high level optimsiations on the Roblox Physics Engine. 
+                </p>
+                <div class="project-tags">
+                  <span class="tag">LUA</span>
+                  <span class="tag">FRONT-END</span>
+                  <span class="tag">BACK-END</span>
+                </div>
+                <button class="project-link" onclick="openModal('modal2')">[ VIEW LINKS → ]</button>
+              </div>
+            </div>
+          
+            <!-- Project Card 3 -->
+            <div class="project-card">
+              <div class="project-card-bar">
+                <span>project_03.exe</span>
+                <span>ROBLOX</span>
+              </div>
+              <div class="project-card-body">
+                <div class="project-title">Grow a Mine</div>
+                <p class="project-desc">
+                  Another project that I started for fun. This time it was me challenging myself to make Grow a Garden, but with Ore's instead.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">LUA</span>
+                  <span class="tag">FRONT-END</span>
+                  <span class="tag">BACK-END</span>
+                  <span class="tag">UI</span>
+                </div>
+                <button class="project-link" onclick="openModal('modal3')">[ VIEW LINKS → ]</button>
+              </div>
+            </div>
+
+            <!-- Project Card 4 -->
+            <div class="project-card">
+              <div class="project-card-bar">
+                <span>project_04.exe</span>
+                <span>ROBLOX</span>
+              </div>
+              <div class="project-card-body">
+                <div class="project-title">Fallout 4 Styled Intro</div>
+                <p class="project-desc">
+                  Just wanted to see what I could make in a couple days. If you couldn't tell, I'm a massive fan of the dystopian genre, old CRT's, and CLI's.
+                <div class="project-tags">
+                  <span class="tag">LUA</span>
+                  <span class="tag">FRONT-END</span>
+                  <span class="tag">BACK-END</span>
+                </div>
+                <button class="project-link" onclick="openModal('modal4')">[ VIEW LINKS → ]</button>
+              </div>
+            </div>
+
+            <!-- Project Card 5 -->
+            <div class="project-card">
+              <div class="project-card-bar">
+                <span>project_05.exe</span>
+                <span>LUA</span>
+              </div>
+              <div class="project-card-body">
+                <div class="project-title">Gun System</div>
+                <p class="project-desc">
+                  A gun system I fully made myself. Includes team based damage, animation handlers, ray-casting, and server-side validation with event limiters.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">LUA</span>
+                  <span class="tag">BACKEND</span>
+                </div>
+                <button class="project-link" onclick="openModal('modal5')">[ VIEW LINKS → ]</button>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills">
+          <div class="section-header">
+            <span class="prompt">//</span>
+            <h2>SKILLS</h2>
+          </div>
+
+          <div class="skills-grid">
+
+            <div class="skill-block">
+              <div class="skill-name">PYTHON</div>
+              <div class="skill-bar-label">PROFICIENCY</div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="width: 80%;"></div>
+              </div>
+              <p class="skill-desc">Scripting, automation, data wrangling, and building both CLI and GUI tools.</p>
+            </div>
+
+            <div class="skill-block">
+              <div class="skill-name">LUA</div>
+              <div class="skill-bar-label">PROFICIENCY</div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="width: 75%;"></div>
+              </div>
+              <p class="skill-desc">Scripting on the Roblox Platform.</p>
+            </div>
+
+            <div class="skill-block">
+              <div class="skill-name">HTML / CSS / JS</div>
+              <div class="skill-bar-label">PROFICIENCY</div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="width: 75%;"></div>
+              </div>
+              <p class="skill-desc">Structuring and styling web pages, like this one!</p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Status bar -->
+      <div class="status-bar">
+        <span>portfolio.exe — running</span>
+        <span class="online">● ONLINE</span>
+        <span id="clock">00:00:00</span>
+      </div>
+
+      <footer>
+        <p>Built with Visual Studio and Caffeine — <a href="https://github.com/kyle632">github.com/kyle632</a></p>
+      </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- Modal for Project 1 -->
+    <div class="modal-overlay" id="modal1">
+      <div class="modal">
+        <div class="modal-bar">
+          <span class="modal-bar-title">project_01.exe — LINKS</span>
+          <button class="modal-close" onclick="closeModal('modal1')">[ X ]</button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-project-title">Point of Sale System</div>
+          <p class="modal-desc">Quick demonstration of the POS system I made. Not the prettiest, but TKinter doesn't really support most modern day UI functionality.</p>
+          <div class="modal-links-label">// AVAILABLE LINKS</div>
+          <div class="modal-links">
+            <a href="https://github.com/Kyle632/Python-POS" target="_blank" class="modal-link">
+              <span class="modal-link-icon">GH</span> GitHub Repository
+              <span class="modal-link-arrow">→</span>
+            </a>
+            <a href="https://youtu.be/PAhtrN3HSFY" target="_blank" class="modal-link">
+              <span class="modal-link-icon">YT</span> Setup + Overview
+              <span class="modal-link-arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Project 2 -->
+    <div class="modal-overlay" id="modal2">
+      <div class="modal">
+        <div class="modal-bar">
+          <span class="modal-bar-title">project_02.exe — LINKS</span>
+          <button class="modal-close" onclick="closeModal('modal2')">[ X ]</button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-project-title">Plinko Machines Stress Test</div>
+          <p class="modal-desc">A stress test of the Plinko Machines, and the optimsiations and caching of the physics happening ingame, all put together to ensure a smooth experience for each client.</p>
+          <div class="modal-links-label">// AVAILABLE LINKS</div>
+          <div class="modal-links">
+            <a href="https://youtu.be/Vrp3RzWojzU" target="_blank" class="modal-link">
+              <span class="modal-link-icon">YT</span> Demonstration
+              <span class="modal-link-arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Project 3 -->
+    <div class="modal-overlay" id="modal3">
+      <div class="modal">
+        <div class="modal-bar">
+          <span class="modal-bar-title">project_03.exe — LINKS</span>
+          <button class="modal-close" onclick="closeModal('modal3')">[ X ]</button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-project-title">Grow a Mine</div>
+          <p class="modal-desc">Demonstration of the Shop Manager, Ore Growth and Randomised Weights, Ore Collection, and the Data Saving mechanic which remembers where the ore was placed relative to the mine.</p>
+          <div class="modal-links-label">// AVAILABLE LINKS</div>
+          <div class="modal-links">
+            <a href="https://youtu.be/kCM8GjbKXmo" target="_blank" class="modal-link">
+              <span class="modal-link-icon">YT</span> Core Game Demo
+              <span class="modal-link-arrow">→</span>
+            </a>
+            <a href="https://youtu.be/MlRWW2EpbN0" target="_blank" class="modal-link">
+              <span class="modal-link-icon">YT</span> Data Saving Video
+              <span class="modal-link-arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Project 4 -->
+    <div class="modal-overlay" id="modal4">
+      <div class="modal">
+        <div class="modal-bar">
+          <span class="modal-bar-title">project_04.exe — LINKS</span>
+          <button class="modal-close" onclick="closeModal('modal4')">[ X ]</button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-project-title">Fallout 4 Styled Intro</div>
+          <p class="modal-desc">Complex Intro with Character Customization, a multi-colour typewriter CLI, all with a CRT style.</p>
+          <div class="modal-links-label">// AVAILABLE LINKS</div>
+          <div class="modal-links">
+            <a href="https://youtu.be/k3aeRqgoYfg" target="_blank" class="modal-link">
+              <span class="modal-link-icon">YT</span> Demo Video
+              <span class="modal-link-arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Project 5 -->
+    <div class="modal-overlay" id="modal5">
+      <div class="modal">
+        <div class="modal-bar">
+          <span class="modal-bar-title">project_05.exe — LINKS</span>
+          <button class="modal-close" onclick="closeModal('modal5')">[ X ]</button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-project-title">Gun System</div>
+          <p class="modal-desc">Gun System showcase</p>
+          <div class="modal-links-label">// AVAILABLE LINKS</div>
+          <div class="modal-links">
+            <a href="https://youtu.be/DFvtNWRyQ1U" target="_blank" class="modal-link">
+              <span class="modal-link-icon">YT</span> Demonstration with a Test Subject
+              <span class="modal-link-arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
